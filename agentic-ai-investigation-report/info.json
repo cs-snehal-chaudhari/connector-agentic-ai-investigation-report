@@ -1,0 +1,88 @@
+{
+    "name": "agentic-ai-investigation-report",
+    "version": "1.0.0",
+    "label": "Agentic AI Investigation Report",
+    "description": "",
+    "publisher": "FortiSOAR",
+    "icon_small_name": "",
+    "icon_large_name": "",
+    "id": 22,
+    "configuration": {},
+    "operations": [
+        {
+            "TEMPLATE_NOTE5": "--ADD OPERATION METADATA--",
+            "operation": "generate_investigation_pdf",
+            "title": "Generate Investigation Report",
+            "description": "Creates alert investigation report",
+            "enabled": true,
+            "category": "utilities",
+            "annotation": "",
+            "TEMPLATE_NOTE6": "--OUTPUT SCHEMA IS A SAMPLE RESPONSE FROM THIS CONNECTOR ACTION--",
+            "output_schema": {
+                "result": "",
+                "api_data": ""
+            },
+            "TEMPLATE_NOTE7": "--PARAMETERS FOR THIS OPERATION--",
+            "parameters": [
+                {
+                    "title": "Investigation JSON",
+                    "type": "object",
+                    "name": "investigationJSON",
+                    "required": true,
+                    "visible": true,
+                    "editable": true,
+                    "value": null
+                },
+                {
+                    "title": "Output File Name",
+                    "type": "text",
+                    "name": "outputFileName",
+                    "required": true,
+                    "visible": true,
+                    "editable": true,
+                    "value": "/tmp/myReport.pdf"
+                },
+                {
+                    "title": "Alert Name",
+                    "type": "text",
+                    "name": "alertName",
+                    "required": true,
+                    "visible": true,
+                    "editable": true,
+                    "value": ""
+                },
+                {
+                    "title": "Alert ID",
+                    "type": "text",
+                    "name": "alertid",
+                    "required": true,
+                    "visible": true,
+                    "editable": true,
+                    "value": ""
+                },
+                {
+                    "title": "Knowledge Base - Questions",
+                    "type": "text",
+                    "name": "kbQuestions",
+                    "required": true,
+                    "visible": true,
+                    "editable": true,
+                    "value": ""
+                }
+            ],
+            "open": false
+        }
+    ],
+    "category": [
+        "Compliance and Reporting"
+    ],
+    "contributor": null,
+    "active": true,
+    "cs_compatible": true,
+    "system": false,
+    "playbook_collections": [],
+    "icon_small": "",
+    "icon_large": "",
+    "help_online": null,
+    "vendor_version": null
+}
