@@ -1,1 +1,1 @@
-LOGGER_NAME = 'generate_investigation_report'
+LOGGER_NAME = 'agentic-ai-investigation-report'
